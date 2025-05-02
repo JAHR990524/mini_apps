@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared/dependencies.dart';
 
 final ventasProvider = StateProvider<int>((_) => 0);
 
@@ -8,15 +8,19 @@ class VentasPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final count = ref.watch(ventasProvider);
     return Scaffold(
       appBar: AppBar(title: Text('Módulo Ventas')),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('Ventas Module'),
+            Text('Ventas Module $count'),
             ElevatedButton(
-              onPressed: () => print('venta'),
+              onPressed: () {
+                ref.read(ventasProvider.notifier).state++;
+                context.go('/');
+              },
               child: Text('Agregar venta'),
             ),
           ],

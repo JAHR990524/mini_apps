@@ -1,6 +1,5 @@
-import 'package:go_router/go_router.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared/app_module.dart';
+import 'package:shared/dependencies.dart';
 import 'ventas_page.dart';
 
 class VentasModule implements AppModule {

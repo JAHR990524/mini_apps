@@ -8,3 +8,4 @@ environment:
 
 dependencies:
   go_router: ^7.0.0
+  flutter_riverpod: ^2.0.0

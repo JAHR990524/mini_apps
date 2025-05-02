@@ -1,6 +1,6 @@
-import 'package:go_router/go_router.dart';
 import 'package:mini_apps/core_app.dart';
 import 'package:shared/app_module.dart';
+import 'package:shared/dependencies.dart';
 
 /// Construye el router combinando rutas base y de módulos
 GoRouter buildRouter(List<AppModule> modules) {

@@ -1,7 +1,7 @@
-import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:module_mantenimiento/mantenimiento_page.dart';
 import 'package:shared/app_module.dart';
+import 'package:shared/dependencies.dart';
 
 class MantenimientoModule implements AppModule {
   @override
