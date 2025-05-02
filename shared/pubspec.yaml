@@ -1,0 +1,10 @@
+publish_to: none
+
+name: shared
+description: Paquete de interfaces comunes
+version: 0.1.0
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  go_router: ^7.0.0

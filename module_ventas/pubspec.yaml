@@ -1,0 +1,15 @@
+publish_to: none # ← debe ir primero, sin sangría
+
+name: module_ventas
+description: Módulo de ventas
+version: 0.1.0
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^7.0.0
+  flutter_riverpod: ^2.0.0
+  shared:
+    path: ../shared
